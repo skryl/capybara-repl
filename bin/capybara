@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+file = File.expand_path(File.symlink?(__FILE__) ? File.readlink(__FILE__) : __FILE__)
+lib = "#{file}/../../lib"
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+
+require 'capybara-repl'
+CapybaraRepl.start
