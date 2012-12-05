@@ -16,8 +16,6 @@ class CapybaraRepl
     def initialize(options = {})
       h
       @steps = []
-      require 'pry'
-      require 'capybara/dsl'
 
       setup_pry
       setup_capybara(options)
@@ -223,7 +221,7 @@ private
 # pry
 
     def setup_pry
-      Pry.prompt = proc { |obj, nest_level| "[#{nest_level}] >> "  }
+      Pry.config.prompt = proc { |obj, nest_level, _| "cap [#{nest_level}] >> "  }
     end
 
 # other

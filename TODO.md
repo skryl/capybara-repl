@@ -1,0 +1,1 @@
+- figure out driver dependencies and fail gracefully if unavailable
