@@ -18,12 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-Just run the bundled binary
+Run the bundled binary
 
     $ capybara
 
 
-You will be greeted by the help banner
+You will be greeted by a help banner inside a Pry shell
 
     Capybara DSL
 
@@ -44,6 +44,9 @@ You will be greeted by the help banner
       commands      -  print the available capybara DSL commands
       h             -  print this message
 
+
+This is just a good 'ol Pry shell with the Capybara stack loaded and some extra
+helpers.
 
 ## Contributing
 

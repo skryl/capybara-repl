@@ -1,9 +1,8 @@
-
 # This is a simplified interface for generating random data using the Faker gem.
-# It allows easier access to faker methods through method_missing. After including
-# this module, all faker methods can be accessed by name without having to know
-# the name of the module they live in. In case of conflicts, the method can be
-# namespaced by prefixing it with the downcased module name. 
+# It allows easier access to faker methods through method_missing. Including
+# this module will give access to all faker methods without having to namespace
+# anything. In case of conflicts, the method can be namespaced by prefixing it
+# with the downcased faker module name. 
 
 # Example
 #
